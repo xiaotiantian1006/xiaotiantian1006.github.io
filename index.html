@@ -210,16 +210,12 @@
 <li>如果是数字值，只是简单的传入和返回</li>
 <li>如果是null值，返回0</li>
 <li>如果是undefined，返回NaN</li>
-<li>如果是字符串，遵循下列规则：</li>
-</ul>
-<ul>
-<li>如果是字符串中只包含数字(包括前面带正负号)，则将其转换为十进制数值(前面的0会被忽略)</li>
-<li>如果字符串中包含有效的浮点格式，如1.1，则将其转换为对应的浮点数值</li>
-<li>如果字符串中包含有效的十六进制，如0xf，则将其转换为相同大小的十进制数值</li>
-<li>如果字符串是空的，返回0</li>
-<li>如果字符串中包含上述格式以外的字符，返回NaN</li>
-</ul>
-<ul>
+<li>如果是字符串，遵循下列规则：<pre><code>+ 如果是字符串中只包含数字(包括前面带正负号)，则将其转换为十进制数值(前面的0会被忽略)
++ 如果字符串中包含有效的浮点格式，如1.1，则将其转换为对应的浮点数值
++ 如果字符串中包含有效的十六进制，如0xf，则将其转换为相同大小的十进制数值
++ 如果字符串是空的，返回0
++ 如果字符串中包含上述格式以外的字符，返回NaN
+</code></pre></li>
 <li>如果是对象，则调用对象的valueOf()方法，然后依照前面的规则转换返回的值。如果转换的结果是NaN,则调用对象的toString()方法，然后再次依照前面的规则转换返回字符串值 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>(<span class="string">'kk'</span>)); <span class="comment">//NaN</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>(<span class="string">''</span>));  <span class="comment">//0</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>(<span class="string">'000222'</span>)); <span class="comment">//222</span></div><div class="line"><span class="built_in">console</span>.log(<span class="built_in">Number</span>(<span class="literal">true</span>));  <span class="comment">//1</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
