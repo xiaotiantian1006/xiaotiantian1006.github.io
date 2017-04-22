@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://github.com/xiaotiantian1006/2017/04/22/hahh/index.html">
 <meta property="og:site_name" content="是姜汁儿啊">
 <meta property="og:description" content="hahah  …      dkdkdfsdssdfdf    fdfd ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。注：在ES6中新增了Symbol。1.typeof操作符    typeof操作符用来检测给定变量的数据类">
-<meta property="og:updated_time" content="2017-04-22T15:28:09.947Z">
+<meta property="og:updated_time" content="2017-04-22T15:29:30.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hahh">
 <meta name="twitter:description" content="hahah  …      dkdkdfsdssdfdf    fdfd ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。注：在ES6中新增了Symbol。1.typeof操作符    typeof操作符用来检测给定变量的数据类">
@@ -176,13 +176,15 @@
 </ul>
 <p> fdfd</p>
 <p>ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。<br>注：在ES6中新增了Symbol。<br><strong>1.typeof操作符</strong><br>    typeof操作符用来检测给定变量的数据类型，可能的返回值：<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">"undefined"</span>  这个值未定义</div><div class="line"><span class="string">"boolean"</span>  这个值是布尔值</div><div class="line"><span class="string">"string"</span>  这个值是字符串</div><div class="line"><span class="string">"number"</span>  这个值是数值</div><div class="line"><span class="string">"object"</span>  这个值是对象或<span class="literal">null</span></div><div class="line"><span class="string">"function"</span>  这个值是函数</div></pre></td></tr></table></figure></p>
-<p>例子：<br>    ```javascript<br>    var name=’tg’;<br>    console.log(typeof name);  //“string”<br>    console.log(typeof {});  //“object”</p>
-<p><strong>2.Undefined类型</strong><br>    undefined类型只有一个值，即特殊的undefined。<br>    如果在使用var声明变量但未对其加以初始化时，这个变量的值就是undefined。<br>    ```javascript<br>    var name;<br>    console.log(name===undefined);  //true</p>
+<p>例子：<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name=<span class="string">'tg'</span>;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> name);  <span class="comment">//"string"</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> &#123;&#125;);  <span class="comment">//"object"</span></div></pre></td></tr></table></figure></p>
+<p><strong>2.Undefined类型</strong><br>    undefined类型只有一个值，即特殊的undefined。<br>    如果在使用var声明变量但未对其加以初始化时，这个变量的值就是undefined。<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name;</div><div class="line"><span class="built_in">console</span>.log(name===<span class="literal">undefined</span>);  <span class="comment">//true</span></div></pre></td></tr></table></figure></p>
 <pre><code>对于未声明过的变量，只能执行一项操作，即使用typeof操作符检测其数据类型（对未声明的变量调用delete不会导致错误（在非严格模式下））    
-</code></pre><p><strong>3.Null类型</strong><br>    null类型也是只有一个值的数据类型，这个值就是null。null值可以看做是一个空对象指针。<br>    <code>javascript
-    console.log(typeof null);  //&quot;object&quot;
-    undefined其实是派生自null值：</code>javascript<br>    console.log(null==undefined);  //true<br>    注意：null和undefined没有属性，甚至连toString()这种标准方法都没有。</p>
-<p><strong>4.Boolean类型</strong></p>
+</code></pre><p><strong>3.Null类型</strong><br>    null类型也是只有一个值的数据类型，这个值就是null。null值可以看做是一个空对象指针。<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>);  <span class="comment">//"object"</span></div></pre></td></tr></table></figure></p>
+<pre><code>undefined其实是派生自null值：
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="literal">null</span>==<span class="literal">undefined</span>);  <span class="comment">//true</span></div></pre></td></tr></table></figure>
+
+注意：null和undefined没有属性，甚至连toString()这种标准方法都没有。
+</code></pre><p><strong>4.Boolean类型</strong></p>
 
       
 
