@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://github.com/xiaotiantian1006">
   <title>数据类型 | 是姜汁儿啊</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。注：在ES6中新增了Symbol。1.typeof操作符    typeof操作符用来检测给定变量的数据类型，可能的返回值：    123456&quot;undefined&quot;  这个值未定义">
+  <meta name="description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。">
 <meta name="keywords" content="-JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据类型">
 <meta property="og:url" content="http://github.com/xiaotiantian1006/2017/04/22/数据类型/index.html">
 <meta property="og:site_name" content="是姜汁儿啊">
-<meta property="og:description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。注：在ES6中新增了Symbol。1.typeof操作符    typeof操作符用来检测给定变量的数据类型，可能的返回值：    123456&quot;undefined&quot;  这个值未定义">
-<meta property="og:updated_time" content="2017-04-22T16:31:33.687Z">
+<meta property="og:description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。">
+<meta property="og:updated_time" content="2017-04-22T16:37:32.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据类型">
-<meta name="twitter:description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。注：在ES6中新增了Symbol。1.typeof操作符    typeof操作符用来检测给定变量的数据类型，可能的返回值：    123456&quot;undefined&quot;  这个值未定义">
+<meta name="twitter:description" content="ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。">
   
     <link rel="alternative" href="/atom.xml" title="是姜汁儿啊" type="application/atom+xml">
   
@@ -170,7 +170,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。<br>注：在ES6中新增了Symbol。<br><strong>1.typeof操作符</strong><br>    typeof操作符用来检测给定变量的数据类型，可能的返回值：<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">"undefined"</span>  这个值未定义</div><div class="line"><span class="string">"boolean"</span>  这个值是布尔值</div><div class="line"><span class="string">"string"</span>  这个值是字符串</div><div class="line"><span class="string">"number"</span>  这个值是数值</div><div class="line"><span class="string">"object"</span>  这个值是对象或<span class="literal">null</span></div><div class="line"><span class="string">"function"</span>  这个值是函数</div></pre></td></tr></table></figure></p>
+        <p>ECMAScript中有5种简单数据类型（基本数据类型）:Undefined、Null、Boolean、Number和String。还有1种复杂数据类型–Object,  Object本质上是由一组无序的名值对组成的。<br><a id="more"></a><br>注：在ES6中新增了Symbol。<br><strong>1.typeof操作符</strong><br>    typeof操作符用来检测给定变量的数据类型，可能的返回值：<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">"undefined"</span>  这个值未定义</div><div class="line"><span class="string">"boolean"</span>  这个值是布尔值</div><div class="line"><span class="string">"string"</span>  这个值是字符串</div><div class="line"><span class="string">"number"</span>  这个值是数值</div><div class="line"><span class="string">"object"</span>  这个值是对象或<span class="literal">null</span></div><div class="line"><span class="string">"function"</span>  这个值是函数</div></pre></td></tr></table></figure></p>
 <p>例子：<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name=<span class="string">'kk'</span>;</div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> name);  <span class="comment">//"string"</span></div><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> &#123;&#125;);  <span class="comment">//"object"</span></div></pre></td></tr></table></figure></p>
 <p><strong>2.Undefined类型</strong><br>    undefined类型只有一个值，即特殊的undefined。<br>    如果在使用var声明变量但未对其加以初始化时，这个变量的值就是undefined。<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name;</div><div class="line"><span class="built_in">console</span>.log(name===<span class="literal">undefined</span>);  <span class="comment">//true</span></div></pre></td></tr></table></figure></p>
 <p>对于未声明过的变量，只能执行一项操作，即使用typeof操作符检测其数据类型（对未声明的变量调用delete不会导致错误（在非严格模式下））<br><strong>3.Null类型</strong><br>    null类型也是只有一个值的数据类型，这个值就是null。null值可以看做是一个空对象指针。<br>    <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> <span class="literal">null</span>);  <span class="comment">//"object"</span></div></pre></td></tr></table></figure></p>
@@ -249,7 +249,7 @@
 <li>protertyIsEnumerable(propertyName):用于检查给定的属性是否能够使用for-in语句来枚举。与hasOwnPerty()方法一样，作为参数的属性名必须以字符串形式指定。       </li>
 <li>toLocaleString():返回对象的字符串表示，该字符串与执行环境的地区对应。</li>
 <li>toString():返回对象的字符串表示。        </li>
-<li>valueOf():返回对象的字符串、数值或布尔值表示。通常与toString()方法的返回值相同。    <a id="more"></a></li>
+<li>valueOf():返回对象的字符串、数值或布尔值表示。通常与toString()方法的返回值相同。    </li>
 </ul>
 
       
